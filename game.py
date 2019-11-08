@@ -82,6 +82,7 @@ def gameloop():
     x, y = 51, 51
     charsize = charwidth, charheight = (50, 50)
     vel = 50
+    score = 0
 
     run = True
     movecount = 200
@@ -98,32 +99,44 @@ def gameloop():
 
             if x - vel >= 0:
                 x -= vel
+            else:
+                score -= 10
             movecount -= 1
 
         if keys[pygame.K_RIGHT]:
             if x + vel + charwidth <= width + 1:
                 x += vel
+            else:
+                score -= 10
             movecount -= 1
 
         if keys[pygame.K_UP]:
             if y - vel >= 0:
                 y -= vel
+            else:
+                score -= 10
             movecount -= 1
 
         if keys[pygame.K_DOWN]:
             if y + vel + charheight <= height + 1:
                 y += vel
+            else:
+                score -= 10
             movecount -= 1
 
         if keys[pygame.K_SPACE]:
             if grid[x // 50][y // 50] == 1:
                 grid[x // 50][y // 50] = 0
+                score += 10
+            else:
+                score -= 1
+
             movecount -= 1
 
         drawGrid(grid, x, y)
-        drawtext(0, movecount)
-
+        drawtext(score, movecount)
         pygame.display.update()
+
 
 gameloop()
 pygame.quit()
