@@ -1,7 +1,10 @@
 import sys, pygame
 import numpy as np
 
+import robby
+
 pygame.init()
+
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -137,9 +140,13 @@ def gameloop():
         drawtext(score, movecount)
         pygame.display.update()
 
+rob = robby.Robby()
+print(rob.gene)
+
 
 gameloop()
 pygame.quit()
 quit()
+
 
 
