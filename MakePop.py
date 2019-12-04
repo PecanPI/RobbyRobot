@@ -1,13 +1,14 @@
 import random
+import robby
 
-class makePop:
-    genes = 243
-    move_options = 6
-    gene:
-    # 243 genes of random numbers 0-6
-    def make_individual(self):
-        genes = 243
-        move_options = 6
-        gene = ""
-        for i in range(genes):
-            gene += random.randint(6)
+mutate_rate = 0.05
+
+
+def breed(parent_1, parent_2):
+    single_point_crossover(parent_1, parent_2)
+
+
+
+
+def single_point_crossover(parent_1, parent_2):
+    pass

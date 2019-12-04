@@ -1,4 +1,5 @@
 import sys, pygame
+import random
 import numpy as np
 
 import robby
@@ -82,7 +83,7 @@ def drawtext(score, count):
 
 
 def gameloop():
-    x, y = 51, 51
+    x, y = 1, 1
     charsize = charwidth, charheight = (50, 50)
     vel = 50
     score = 0
@@ -91,43 +92,50 @@ def gameloop():
     movecount = 200
     clock = pygame.time.Clock()
     grid = makeMap()
+    robot = robby.Robby()
+
 
     while run and movecount > 0:
-        pygame.time.delay(100)
+        pygame.time.delay(500)
+        move = robot.move(grid, x // 50, y // 50)
+        print(move)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_LEFT]:
 
+        if int(move) == 6:
+            move = random.randint(0, 6)
+
+        if keys[pygame.K_LEFT] or int(move) == 3:
             if x - vel >= 0:
                 x -= vel
             else:
                 score -= 10
             movecount -= 1
 
-        if keys[pygame.K_RIGHT]:
+        if keys[pygame.K_RIGHT] or int(move) == 2:
             if x + vel + charwidth <= width + 1:
                 x += vel
             else:
                 score -= 10
             movecount -= 1
 
-        if keys[pygame.K_UP]:
+        if keys[pygame.K_UP] or int(move) == 0:
             if y - vel >= 0:
                 y -= vel
             else:
                 score -= 10
             movecount -= 1
 
-        if keys[pygame.K_DOWN]:
+        if keys[pygame.K_DOWN] or int(move) == 1:
             if y + vel + charheight <= height + 1:
                 y += vel
             else:
                 score -= 10
             movecount -= 1
 
-        if keys[pygame.K_SPACE]:
+        if keys[pygame.K_SPACE] or int(move) == 5:
             if grid[x // 50][y // 50] == 1:
                 grid[x // 50][y // 50] = 0
                 score += 10
@@ -136,12 +144,12 @@ def gameloop():
 
             movecount -= 1
 
+        if int(move) == 4:
+            movecount -= 1
+
         drawGrid(grid, x, y)
         drawtext(score, movecount)
         pygame.display.update()
-
-rob = robby.Robby()
-print(rob.gene)
 
 
 gameloop()
