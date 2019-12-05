@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="768f81b0-aadf-463b-9789-48c20eb8058a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/runSim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cleaningSession.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/robby.py" beforeDir="false" afterPath="$PROJECT_DIR$/robby.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runSim.py" beforeDir="false" afterPath="$PROJECT_DIR$/runSim.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575466136841</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added runSim &#10;need to make game run from runSim">
+      <created>1575506482912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575506482912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Robby can now play" />
-    <option name="LAST_COMMIT_MESSAGE" value="Robby can now play" />
+    <MESSAGE value="added runSim &#10;need to make game run from runSim" />
+    <option name="LAST_COMMIT_MESSAGE" value="added runSim &#10;need to make game run from runSim" />
   </component>
 </project>

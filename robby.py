@@ -62,7 +62,7 @@ class Robby:
         # current spot 3**4
         if x > 20:  # current is a wall, not possible, could optimize and shorten the gene a bit
             move = move + 3 ** 4 + 2
-        elif grid[x + 1][y] == 1:  # current has a can
+        elif grid[x][y] == 1:  # current has a can
             move = move + 3 ** 4 + 1
         else:  # current is empty
             move = move + 3 ** 4 + 0

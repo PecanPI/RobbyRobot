@@ -62,19 +62,19 @@ def text_objects(text, font):
     return textSurface, textSurface.get_rect()
 
 
-# draw fitness score and move count
-def drawtext(score, count):
-    scoreText = pygame.font.Font('freesansbold.ttf', 22)
-    textSurf, textRect = text_objects('Fitness: ', scoreText)
+# draw fitness fitness and move count
+def drawtext(fitness, count):
+    fitnessText = pygame.font.Font('freesansbold.ttf', 22)
+    textSurf, textRect = text_objects('Fitness: ', fitnessText)
     textRect.center = (50, 525)
     win.blit(textSurf, textRect)
-    textSurf, textRect = text_objects(str(score), scoreText)
+    textSurf, textRect = text_objects(str(fitness), fitnessText)
     textRect.center = (150, 525)
     win.blit(textSurf, textRect)
-    textSurf, textRect = text_objects('Moves: ', scoreText)
+    textSurf, textRect = text_objects('Moves: ', fitnessText)
     textRect.center = (50, 575)
     win.blit(textSurf, textRect)
-    textSurf, textRect = text_objects(str(count), scoreText)
+    textSurf, textRect = text_objects(str(count), fitnessText)
     textRect.center = (150, 575)
     win.blit(textSurf, textRect)
 
@@ -84,18 +84,17 @@ def drawtext(score, count):
 
 def gameloop():
     x, y = 1, 1
-    charsize = charwidth, charheight = (50, 50)
+    charwidth, charheight = (50, 50)
     vel = 50
-    score = 0
+    fitness = 0
 
     run = True
-    movecount = 200
-    clock = pygame.time.Clock()
+    move_count = 200
     grid = makeMap()
     robot = robby.Robby()
 
 
-    while run and movecount > 0:
+    while run and move_count > 0:
         pygame.time.delay(500)
         move = robot.move(grid, x // 50, y // 50)
         print(move)
@@ -111,46 +110,45 @@ def gameloop():
             if x - vel >= 0:
                 x -= vel
             else:
-                score -= 5
-            movecount -= 1
+                fitness -= 5
+            move_count -= 1
 
         if keys[pygame.K_RIGHT] or int(move) == 2:
             if x + vel + charwidth <= width + 1:
                 x += vel
             else:
-                score -= 5
-            movecount -= 1
+                fitness -= 5
+            move_count -= 1
 
         if keys[pygame.K_UP] or int(move) == 0:
             if y - vel >= 0:
                 y -= vel
             else:
-                score -= 5
-            movecount -= 1
+                fitness -= 5
+            move_count -= 1
 
         if keys[pygame.K_DOWN] or int(move) == 1:
             if y + vel + charheight <= height + 1:
                 y += vel
             else:
-                score -= 5
-            movecount -= 1
+                fitness -= 5
+            move_count -= 1
 
         if keys[pygame.K_SPACE] or int(move) == 5:
             if grid[x // 50][y // 50] == 1:
                 grid[x // 50][y // 50] = 0
-                score += 10
+                fitness += 10
             else:
-                score -= 1
+                fitness -= 1
 
-            movecount -= 1
+            move_count -= 1
 
         if int(move) == 4:
-            movecount -= 1
+            move_count -= 1
 
         drawGrid(grid, x, y)
-        drawtext(score, movecount)
+        drawtext(fitness, move_count)
         pygame.display.update()
-    return  score
 
 
 gameloop()

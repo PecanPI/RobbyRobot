@@ -1,10 +1,10 @@
 import robby
-import numpy as np
+import cleaningSession
 
 
 generations = 1000
 cleaning_sessions = 100
-population_size = 200
+population_size = 2
 population = []
 
 for i in range(generations):
@@ -12,7 +12,8 @@ for i in range(generations):
         for j in range(population_size):
             population.append(robby.Robby())
 
-    for j in population:
+for j in population:
+    for k in range(cleaning_sessions):
+        print(f'run %s Fitness: %s' % (k, cleaningSession.cleaning(j)))
 
-        print(j.gene)
 
