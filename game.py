@@ -1,4 +1,4 @@
-import sys, pygame
+import pygame
 import random
 import numpy as np
 
@@ -111,28 +111,28 @@ def gameloop():
             if x - vel >= 0:
                 x -= vel
             else:
-                score -= 10
+                score -= 5
             movecount -= 1
 
         if keys[pygame.K_RIGHT] or int(move) == 2:
             if x + vel + charwidth <= width + 1:
                 x += vel
             else:
-                score -= 10
+                score -= 5
             movecount -= 1
 
         if keys[pygame.K_UP] or int(move) == 0:
             if y - vel >= 0:
                 y -= vel
             else:
-                score -= 10
+                score -= 5
             movecount -= 1
 
         if keys[pygame.K_DOWN] or int(move) == 1:
             if y + vel + charheight <= height + 1:
                 y += vel
             else:
-                score -= 10
+                score -= 5
             movecount -= 1
 
         if keys[pygame.K_SPACE] or int(move) == 5:
@@ -150,6 +150,7 @@ def gameloop():
         drawGrid(grid, x, y)
         drawtext(score, movecount)
         pygame.display.update()
+    return  score
 
 
 gameloop()
