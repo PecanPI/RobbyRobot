@@ -19,6 +19,12 @@ class Robby:
     def __init__(self):
         self.gene = make_gene(self)
 
+    def __str__(self):
+        return self.gene
+
+    def __repr__(self):
+        return self.gene
+
     def set_fitness(self, fit):
         self.fitness = fit
 
