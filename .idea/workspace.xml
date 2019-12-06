@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="768f81b0-aadf-463b-9789-48c20eb8058a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robby.py" beforeDir="false" afterPath="$PROJECT_DIR$/robby.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runSim.py" beforeDir="false" afterPath="$PROJECT_DIR$/runSim.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575553274955</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="runSim can now play games not through the UI with cleaningsessions.py">
+      <created>1575600968377</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575600968377</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

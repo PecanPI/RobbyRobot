@@ -4,14 +4,16 @@ import cleaningSession
 
 generations = 1000
 cleaning_sessions = 100
-population_size = 2
-population = [[], []]
+population_size = 5
+population = []
 
 
 for i in range(generations):
     if i == 0:  # intial population
         for j in range(population_size):
-            population[j].append(robby.Robby())
+            new = []
+            new.append(robby.Robby())
+            population.append(new)
 
 
 for i in range(len(population)):
@@ -28,3 +30,7 @@ for i in range(len(population)):
 for p in population:
     print(p)
 
+population.sort(key=lambda x:x[1], reverse=True)
+print()
+for p in population:
+    print(p)
