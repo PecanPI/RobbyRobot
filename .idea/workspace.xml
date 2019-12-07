@@ -4,8 +4,6 @@
     <list default="true" id="768f81b0-aadf-463b-9789-48c20eb8058a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/breeding.py" beforeDir="false" afterPath="$PROJECT_DIR$/breeding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleaningSession.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaningSession.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runSim.py" beforeDir="false" afterPath="$PROJECT_DIR$/runSim.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575689379926</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="works kind of, have to improve the breeding algorithm">
+      <created>1575695598689</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575695598689</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +166,7 @@
     <MESSAGE value="added runSim &#10;need to make game run from runSim" />
     <MESSAGE value="runSim can now play games not through the UI with cleaningsessions.py" />
     <MESSAGE value="added breeding, for mutation and single point crossover" />
-    <option name="LAST_COMMIT_MESSAGE" value="added breeding, for mutation and single point crossover" />
+    <MESSAGE value="works kind of, have to improve the breeding algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="works kind of, have to improve the breeding algorithm" />
   </component>
 </project>

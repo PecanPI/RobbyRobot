@@ -4,7 +4,7 @@ import breeding
 import cleaningSession
 
 
-generations = 1000
+generations = 1001
 cleaning_sessions = 100
 population_size = 10
 population = []

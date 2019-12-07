@@ -1,7 +1,7 @@
 import robby
 import random
 
-mutate_rate = 0.01
+mutate_rate = 0.02
 
 
 def breed(population):
