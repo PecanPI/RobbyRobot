@@ -1,4 +1,6 @@
 import robby
+import game
+import breeding
 import cleaningSession
 
 
@@ -11,8 +13,7 @@ population = []
 for i in range(generations):
     if i == 0:  # intial population
         for j in range(population_size):
-            new = []
-            new.append(robby.Robby())
+            new = [robby.Robby()]
             population.append(new)
 
 
@@ -26,11 +27,14 @@ for i in range(len(population)):
     population[i].append(fitness)
 
 
-#easier read format
-for p in population:
-    print(p)
-
-population.sort(key=lambda x:x[1], reverse=True)
+population.sort(key=lambda x: x[1], reverse=True)
 print()
 for p in population:
     print(p)
+
+#game.gameloop(population[0][0])
+
+population[0][0].set_gene(breeding.mutate(population[0][0].gene))
+print(population[0][0])
+
+print(breeding.singlePointCrossover(population[0][0].gene, population[1][0].gene))

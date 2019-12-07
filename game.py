@@ -4,23 +4,20 @@ import numpy as np
 
 import robby
 
-pygame.init()
+#pygame.init()
 
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 RED = (255, 0, 0)
-
 robbyIMG = pygame.image.load('images/Idle.png')
 trashIMG = pygame.image.load('images/trash.png')
-
 width = 500
 height = 500
 menuheight = 100
 windowSize = width, height + menuheight
-win = pygame.display.set_mode(windowSize)
-pygame.display.set_caption("Robby Robot")
+
 
 
 def makeMap():
@@ -40,7 +37,7 @@ def makeMap():
     return g
 
 
-def drawGrid(g,x,y):
+def drawGrid(win, g,x,y):
     win.fill(WHITE)
     # Vertical Lines
     for i in range(10):
@@ -63,7 +60,7 @@ def text_objects(text, font):
 
 
 # draw fitness fitness and move count
-def drawtext(fitness, count):
+def drawtext(win, fitness, count):
     fitnessText = pygame.font.Font('freesansbold.ttf', 22)
     textSurf, textRect = text_objects('Fitness: ', fitnessText)
     textRect.center = (50, 525)
@@ -82,7 +79,8 @@ def drawtext(fitness, count):
 
 
 
-def gameloop():
+def gameloop(robot):
+    pygame.init()
     x, y = 1, 1
     charwidth, charheight = (50, 50)
     vel = 50
@@ -91,11 +89,14 @@ def gameloop():
     run = True
     move_count = 200
     grid = makeMap()
-    robot = robby.Robby()
+
+    print(robot)
 
 
     while run and move_count > 0:
         pygame.time.delay(500)
+        win = pygame.display.set_mode(windowSize)
+        pygame.display.set_caption("Robby Robot")
         move = robot.move(grid, x // 50, y // 50)
         print(move)
         for event in pygame.event.get():
@@ -146,14 +147,13 @@ def gameloop():
         if int(move) == 4:
             move_count -= 1
 
-        drawGrid(grid, x, y)
-        drawtext(fitness, move_count)
+        drawGrid(win, grid, x, y)
+        drawtext(win, fitness, move_count)
         pygame.display.update()
+    pygame.quit()
 
 
-gameloop()
-pygame.quit()
-quit()
+
 
 
 

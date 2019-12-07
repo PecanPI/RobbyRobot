@@ -9,7 +9,6 @@ def make_gene(self):
     return gene
 
 
-
 class Robby:
     gene = ""
     x_pos = 0
@@ -27,6 +26,9 @@ class Robby:
 
     def set_fitness(self, fit):
         self.fitness = fit
+
+    def set_gene(self, gene):
+        self.gene = gene
 
     def move(self, grid, x, y):
         move = 0
