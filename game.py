@@ -90,15 +90,12 @@ def gameloop(robot):
     move_count = 200
     grid = makeMap()
 
-    print(robot)
-
-
     while run and move_count > 0:
         pygame.time.delay(500)
         win = pygame.display.set_mode(windowSize)
         pygame.display.set_caption("Robby Robot")
         move = robot.move(grid, x // 50, y // 50)
-        print(move)
+        #print(move)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -145,6 +142,7 @@ def gameloop(robot):
             move_count -= 1
 
         if int(move) == 4:
+            fitness -= 1
             move_count -= 1
 
         drawGrid(win, grid, x, y)

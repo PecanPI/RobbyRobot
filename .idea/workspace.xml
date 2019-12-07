@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="768f81b0-aadf-463b-9789-48c20eb8058a" name="Default Changelist" comment="runSim can now play games not through the UI with cleaningsessions.py">
-      <change afterPath="$PROJECT_DIR$/breeding.py" afterDir="false" />
+    <list default="true" id="768f81b0-aadf-463b-9789-48c20eb8058a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MakePop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/breeding.py" beforeDir="false" afterPath="$PROJECT_DIR$/breeding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaningSession.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaningSession.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robby.py" beforeDir="false" afterPath="$PROJECT_DIR$/robby.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runSim.py" beforeDir="false" afterPath="$PROJECT_DIR$/runSim.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575639715092</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added breeding, for mutation and single point crossover">
+      <created>1575689379926</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575689379926</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +160,7 @@
     <MESSAGE value="Robby can now play" />
     <MESSAGE value="added runSim &#10;need to make game run from runSim" />
     <MESSAGE value="runSim can now play games not through the UI with cleaningsessions.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="runSim can now play games not through the UI with cleaningsessions.py" />
+    <MESSAGE value="added breeding, for mutation and single point crossover" />
+    <option name="LAST_COMMIT_MESSAGE" value="added breeding, for mutation and single point crossover" />
   </component>
 </project>
