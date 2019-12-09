@@ -1,10 +1,8 @@
 import pygame
 import random
 import numpy as np
+import threading
 
-import robby
-
-#pygame.init()
 
 
 BLACK = (0, 0, 0)
@@ -85,7 +83,6 @@ def gameloop(robot):
     charwidth, charheight = (50, 50)
     vel = 50
     fitness = 0
-
     run = True
     move_count = 200
     grid = makeMap()

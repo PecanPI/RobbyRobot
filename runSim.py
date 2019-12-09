@@ -2,13 +2,12 @@ import robby
 import game
 import breeding
 import cleaningSession
-
+import threading
 
 generations = 1001
 cleaning_sessions = 100
 population_size = 10
 population = []
-
 
 for i in range(generations):
     print(f'Generation %s:' % i)
@@ -29,8 +28,15 @@ for i in range(generations):
         population[j].append(fitness)
 
     population.sort(key=lambda x: x[1], reverse=True)
+
     if i % 200 == 0:
-        game.gameloop(population[0][0])
+        thread = threading.Thread(target = game.gameloop, args=(population[0][0],), daemon=True)
+        #thread.start()
+
+        #game.gameloop(population[0][0])
+        thread.start()
+
+    #thread.join()
     print(population[0][1])
     breeding.breed(population)
 
