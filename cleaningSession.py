@@ -7,6 +7,7 @@ import random
 width = 500
 height = 500
 
+
 #cleaning session for robby
 def cleaning(robby):
     x, y = 1, 1
@@ -27,7 +28,7 @@ def cleaning(robby):
             prevmove = move
 
         if int(move) == 6:
-            move = random.randint(0, 6)
+            move = random.randint(0, 5)
 
         if int(move) == 3:
             if x - vel >= 0:
