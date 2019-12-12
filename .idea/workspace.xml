@@ -5,9 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/breeding.py" beforeDir="false" afterPath="$PROJECT_DIR$/breeding.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cleaningSession.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaningSession.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robby.py" beforeDir="false" afterPath="$PROJECT_DIR$/robby.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runSim.py" beforeDir="false" afterPath="$PROJECT_DIR$/runSim.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,22 +26,15 @@
   </component>
   <component name="ProjectId" id="1UPHEgdB5Ovqv0PRpDaThfTHPki" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.runSim">
     <configuration name="game" type="PythonConfigurationType" factoryName="Python">
@@ -85,6 +79,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -160,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575933550739</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="changed single crossover">
+      <created>1576028328542</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1576028328542</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +196,29 @@
     <MESSAGE value="added breeding, for mutation and single point crossover" />
     <MESSAGE value="works kind of, have to improve the breeding algorithm" />
     <MESSAGE value="Threaded game, so generations run behind game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Threaded game, so generations run behind game" />
+    <MESSAGE value="changed single crossover" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed single crossover" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1807" height="273" key="GridCell.Tab.0.bottom" timestamp="1576121240752">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576121240752" />
+    <state width="1807" height="273" key="GridCell.Tab.0.center" timestamp="1576121240752">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="273" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576121240752" />
+    <state width="1807" height="273" key="GridCell.Tab.0.left" timestamp="1576121240751">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="273" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576121240751" />
+    <state width="1807" height="273" key="GridCell.Tab.0.right" timestamp="1576121240752">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="273" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576121240752" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576119241877">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576119241877" />
   </component>
 </project>

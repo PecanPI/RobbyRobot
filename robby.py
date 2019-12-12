@@ -5,7 +5,7 @@ def make_gene(self):
     gene = ""
     gene_length = 243
     for i in range(gene_length):
-        gene = gene + str(random.randint(0, 6))
+        gene = gene + str(random.randint(0, 4))
     return gene
 
 
@@ -53,9 +53,9 @@ class Robby:
 
         # down 3**2
         if y + 1 > 9:  # below is a wall
-            move = move + 3**3 + 2
+            move = move + 3**2 + 2
         elif grid[x][y+1] == 1:  # below has a can
-            move = move + 3**3 + 1
+            move = move + 3**2 + 1
         else:  # below is empty
             move = move + 3**2 + 0
 

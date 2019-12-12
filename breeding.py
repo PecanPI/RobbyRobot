@@ -1,13 +1,13 @@
 import robby
 import random
 
-mutate_rate = 0.005
+mutate_rate = 0.02
 
 
 def breed(population):
     newpop = []
     for i in range(int(len(population)/2)):
-        rand = random.randrange(int(len(population)/4))
+        rand = random.randrange(int(len(population)/2))
         child1 = [robby.Robby()]
         child2 = [robby.Robby()]
         gene1, gene2 = singlePointCrossover(population[i][0].gene, population[rand][0].gene)
@@ -24,7 +24,7 @@ def mutate(rob):
     newrob = list(rob.gene)
     for i in range(len(newrob)):
         if (random.randrange(1000) / 1000) < mutate_rate:
-            newrob[i] = str(random.randint(0, 6))
+            newrob[i] = str(random.randint(0, 4))
 
     rob.set_gene("".join(newrob))
     return rob
@@ -55,3 +55,4 @@ def twoPointCrossover(p1, p2):
     parent2 = list(p2)
     child1 = ""
     child2 = ""
+

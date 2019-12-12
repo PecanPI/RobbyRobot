@@ -4,31 +4,28 @@
 import numpy as np
 import random
 
-width = 500
-height = 500
-
 
 #cleaning session for robby
 def cleaning(robby):
     x, y = 1, 1
-    charwidth, charheight = (50, 50)
-    vel = 50
+    vel = 1
     fitness = 0
     run = True
+    prevmove = 9
     move_count = 200
     grid = makeMap()
-    prevmove = 7;
 
     while run and move_count > 0:
-        move = robby.move(grid, x // 50, y // 50)
-        # this block is to prevent robby from cycling back and forth
-        if move == prevmove:
-            fitness - 1
-        if move_count % 2 == 0:
-            prevmove = move
+        move = robby.move(grid, x, y)
 
         if int(move) == 6:
             move = random.randint(0, 5)
+        # if prev move was stay put makes the move random
+        if int(move) == 5:
+            if prevmove == move:
+                move = random.randint(0, 5)
+            else:
+                move_count -= 1
 
         if int(move) == 3:
             if x - vel >= 0:
@@ -38,7 +35,7 @@ def cleaning(robby):
             move_count -= 1
 
         if int(move) == 2:
-            if x + vel + charwidth <= width + 1:
+            if x + vel + 1 <= 10:
                 x += vel
             else:
                 fitness -= 5
@@ -52,24 +49,21 @@ def cleaning(robby):
             move_count -= 1
 
         if int(move) == 1:
-            if y + vel + charheight <= height + 1:
+            if y + vel + 1 <= 10:
                 y += vel
             else:
                 fitness -= 5
             move_count -= 1
 
-        if int(move) == 5:
-            if grid[x // 50][y // 50] == 1:
-                grid[x // 50][y // 50] = 0
-                fitness += 20
+        if int(move) == 4:
+            if grid[x][y] == 1:
+                grid[x][y] = 0
+                fitness += 10
             else:
                 fitness -= 1
 
             move_count -= 1
-
-        if int(move) == 4:
-            fitness -= 2
-            move_count -= 1
+        prevmove = move
     return fitness
 
 

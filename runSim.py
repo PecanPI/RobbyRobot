@@ -39,7 +39,7 @@ for i in range(generations):
         sum += j[1]
     average_fitness.append(sum/len(population))
 
-    if i % 200 == 0:
+    if i % 20 == 0:
         thread = threading.Thread(target = game.gameloop, args=(population[0][0],))
         thread.start()
 
