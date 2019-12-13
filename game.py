@@ -79,7 +79,7 @@ def drawtext(win, fitness, count):
 
 def gameloop(robot):
     pygame.init()
-    x, y = 51, 51
+    x, y = 1, 1
     charwidth, charheight = (50, 50)
     vel = 50
     fitness = 0
@@ -138,6 +138,7 @@ def gameloop(robot):
             move_count -= 1
 
         if int(move) == 5:
+            fitness -= 1
             move_count -= 1
 
         drawGrid(win, grid, x, y)

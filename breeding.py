@@ -3,7 +3,7 @@ import random
 
 mutate_rate = 0.02
 
-
+# breeds a new population
 def breed(population):
     newpop = []
     for i in range(int(len(population)/2)):
@@ -20,22 +20,25 @@ def breed(population):
 
     return newpop
 
+# mutates random genes
 def mutate(rob):
     newrob = list(rob.gene)
     for i in range(len(newrob)):
         if (random.randrange(1000) / 1000) < mutate_rate:
-            newrob[i] = str(random.randint(0, 4))
+            newrob[i] = str(random.randint(0, 6))
 
     rob.set_gene("".join(newrob))
     return rob
 
 
+# takes two parents and performs a single point crossover
+# returns two children
 def singlePointCrossover(p1, p2):
     parent1 = list(p1)
     parent2 = list(p2)
     child1 = ""
     child2 = ""
-    crossover_point = random.randint(100, len(p1))
+    crossover_point = random.randint(0, len(p1))
     for i in range(len(p1)):
         if i <= crossover_point:
             child1 += parent1[i]
