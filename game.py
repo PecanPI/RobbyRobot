@@ -1,7 +1,8 @@
 import pygame
 import random
 import numpy as np
-import threading
+import robby
+
 
 
 
@@ -138,16 +139,11 @@ def gameloop(robot):
             move_count -= 1
 
         if int(move) == 5:
-            fitness -= 1
             move_count -= 1
 
         drawGrid(win, grid, x, y)
         drawtext(win, fitness, move_count)
         pygame.display.update()
     pygame.quit()
-
-
-
-
 
 

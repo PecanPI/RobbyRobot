@@ -10,14 +10,11 @@ def cleaning(robby):
     x, y = 0, 0
     vel = 1
     fitness = 0
-    run = True
     move_count = 200
     grid = makeMap()
 
-    while run and move_count > 0:
+    while move_count > 0:
         move = robby.move(grid, x, y)
-        # move up
-
         # random move
         if int(move) == 6:
             move = random.randint(0, 5)
@@ -59,7 +56,6 @@ def cleaning(robby):
             move_count -= 1
         # stay put
         if int(move) == 5:
-            fitness -= 1
             move_count -= 1
 
     return fitness
