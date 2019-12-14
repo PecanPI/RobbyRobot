@@ -27,14 +27,14 @@ def cleaning(robby):
             move_count -= 1
         # move down
         if int(move) == 1:
-            if y + vel < 9:
+            if y + vel <= 9:
                 y += vel
             else:
                 fitness -= 5
             move_count -= 1
         # move right
         if int(move) == 2:
-            if x + vel < 9:
+            if x + vel <= 9:
                 x += vel
             else:
                 fitness -= 5

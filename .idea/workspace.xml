@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/breeding.py" beforeDir="false" afterPath="$PROJECT_DIR$/breeding.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cleaningSession.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleaningSession.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robby.py" beforeDir="false" afterPath="$PROJECT_DIR$/robby.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runSim.py" beforeDir="false" afterPath="$PROJECT_DIR$/runSim.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576206676480</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added a graph">
+      <created>1576271284057</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576271284057</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,29 +218,30 @@
     <MESSAGE value="Threaded game, so generations run behind game" />
     <MESSAGE value="changed single crossover" />
     <MESSAGE value="found error in robby.move&#10;played with some fitness changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="found error in robby.move&#10;played with some fitness changes" />
+    <MESSAGE value="added a graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a graph" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="600" y="149" width="777" height="807" key="CommitChangelistDialog2" timestamp="1576206676291">
+    <state x="600" y="149" width="777" height="807" key="CommitChangelistDialog2" timestamp="1576271283879">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="600" y="149" width="777" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1576206676291" />
-    <state width="881" height="273" key="GridCell.Tab.0.bottom" timestamp="1576270210321">
+    <state x="600" y="149" width="777" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1576271283879" />
+    <state width="881" height="273" key="GridCell.Tab.0.bottom" timestamp="1576338501251">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576270210321" />
-    <state width="881" height="273" key="GridCell.Tab.0.center" timestamp="1576270210320">
+    <state width="881" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576338501251" />
+    <state width="881" height="273" key="GridCell.Tab.0.center" timestamp="1576338501251">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="273" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576270210320" />
-    <state width="881" height="273" key="GridCell.Tab.0.left" timestamp="1576270210320">
+    <state width="881" height="273" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576338501251" />
+    <state width="881" height="273" key="GridCell.Tab.0.left" timestamp="1576338501251">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="273" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576270210320" />
-    <state width="881" height="273" key="GridCell.Tab.0.right" timestamp="1576270210321">
+    <state width="881" height="273" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576338501251" />
+    <state width="881" height="273" key="GridCell.Tab.0.right" timestamp="1576338501251">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="273" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576270210321" />
+    <state width="881" height="273" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576338501251" />
     <state width="881" height="344" key="GridCell.Tab.1.bottom" timestamp="1576266327366">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

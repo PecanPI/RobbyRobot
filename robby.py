@@ -1,6 +1,4 @@
 import random
-import numpy as np
-
 
 def make_gene(self):
     gene = ""
