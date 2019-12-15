@@ -12,7 +12,7 @@ def breed(population):
         child1 = [robby.Robby()]
         child2 = [robby.Robby()]
         #gene1, gene2 = singlePointCrossover(population[i][0].gene, population[rand][0].gene)
-        gene1, gene2 = singlePointCrossover(weightedChoice(population[0:150]).gene, weightedChoice(population[0:150]).gene)
+        gene1, gene2 = singlePointCrossover(weightedChoice(population[0:100]).gene, weightedChoice(population[0:100]).gene)
         child1[0].set_gene(gene1)
         child2[0].set_gene(gene2)
         child1[0] = mutate(child1[0])

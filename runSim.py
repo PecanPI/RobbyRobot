@@ -41,7 +41,6 @@ for i in range(generations):
         weight = (fitness - (-1000)) / (500 - (-1000))
         population[j].append(weight)
 
-
     population.sort(key=lambda x: x[1], reverse=True)
     max_fitness.append(population[0][1])
     sum = 0
